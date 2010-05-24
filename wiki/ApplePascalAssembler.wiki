@@ -23,6 +23,21 @@ Binary operators
 All operators have the same precedence but may be grouped with < and >.
  
 
+= Identifiers =
+
+[A-Za-z][A-Za-z0-9_]+
+
+= Labels =
+
+may optionally be followed by a colon.
+
+
+== Local Labels ==
+
+have $ as the first character, limit of 21.  local labels are invalidated when the next non-local label is encountered.
+May not be used with the `.EQU` directive.
+
+
 = Directives = 
 
 `    .PROC <identifier>[,expression]`
