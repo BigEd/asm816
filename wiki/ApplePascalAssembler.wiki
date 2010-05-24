@@ -16,7 +16,7 @@ Unary operators:
 
 Binary operators
 
-+, -,  ^, *, /, %,  |, &, =, <>
++, -,  ^, `*`, /, %,  |, &, =, <>
 
 = and <> are only valid in `.IF` expressions.
 
