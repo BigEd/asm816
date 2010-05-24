@@ -25,7 +25,7 @@ All operators have the same precedence but may be grouped with < and >.
 
 = Identifiers =
 
-[A-Za-z][A-Za-z0-9_]+
+`[A-Za-z][A-Za-z0-9_]+`
 
 = Labels =
 
