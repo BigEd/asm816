@@ -4,6 +4,25 @@
 
 Apple Pascal was a port of UCSD Pascal for the Apple II series.  It included a 6500-series assembler based on UCSD Adaptable Assembler and "The Last Assembler" (TLA) from the University of Waterloo.
 
+= Constants =
+
+Numbers are hexadecimal unless followed by a `.`.  Numbers must begin with a number (which is to say `FF` should be written as `0FF`
+
+=Operators=
+
+Unary operators:
+
++, -, ~ 
+
+Binary operators
+
++, -,  ^, *, /, %,  |, &, =, <>
+
+= and <> are only valid in `.IF` expressions.
+
+All operators have the same precedence but may be grouped with < and >.
+ 
+
 = Directives = 
 
 `    .PROC <identifier>[,expression]`
@@ -23,7 +42,7 @@ Generates one or more bytes.
 
 `[label] .BLOCK <length>[,value]` 
 
-Generates <length> bytes of <value> (default is 0)
+Generates `<length>` bytes of `<value>` (default is 0)
 
 `[label] .WORD <valuelist>`
 
@@ -31,12 +50,12 @@ Generates one or more 16-bit words.
 
 `<label> .EQU <value>`
 
-Assigns a value to a label.  <label> may not be a local label. `$` denotes the current location counter.
+Assigns a value to a label.  `<label>` may not be a local label. `$` denotes the current location counter.
 
 
 `    .ORG <value>`
 
-Generates 0s until the location counter is equal to <value>
+Generates 0s until the location counter is equal to `<value>`
 
 `    .ABSOLUTE`
 
