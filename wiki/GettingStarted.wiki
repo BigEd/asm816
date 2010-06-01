@@ -1,0 +1,12 @@
+#summary Quick guide to compiling, running, and using Asm816
+= Introduction =
+
+This document aims to provide step-by-step directions to compiling, running, and using Asm816 for IIgs software development.  At the moment, this document is incomplete, but I feel that some information is better than none.
+
+
+= Getting the software =
+
+The asm816 software is only available as source code.  First, you need to install Java development tools so you can compile asm816:
+
+  * Download and install the [http://java.sun.com/javase/downloads/index.jsp _Java Platform JDK_]
+  * Download and install [http://www.eclipse.org/downloads]_Eclipse for Java Developers_
